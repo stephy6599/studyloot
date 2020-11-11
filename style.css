@@ -1,0 +1,738 @@
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('./Fonts/Montserrat-SemiBold.ttf');
+}
+body{
+    font-family: Montserrat-SemiBold;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F6FF;
+}
+nav{
+    background-color: #fff;
+}
+#navLinks{
+  cursor: pointer;
+  color: black;
+}
+#navLinks:hover{
+  color: #FF4D4D;
+}
+#searchBar{
+  background-image: url('./SVGs/search.svg');
+  background-repeat: no-repeat;
+  background-position: 5px 9px; 
+  padding: 12px 15px 12px 30px;
+}
+ /* The side navigation menu */
+.sidenav {
+  min-height: 82%; /* 100% Full-height */
+  width: 20px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  background-color: rgb(255, 255, 255); /* Black*/
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: inline-block;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #BABABA;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.menu-title{
+  width: 100px;
+  margin-top: -35px;
+  display: none;
+}
+.menu-items{
+    overflow: hidden;
+    display: none;
+}
+.menu-items a:hover{
+  background-color: #ff4d4d2d;
+}
+.navbr{
+  border-bottom: 20px solid #FF4D4D;
+  border-radius: 30px;
+  margin-bottom: -100px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 985px) {
+.navbr{
+  display: none;
+}
+.ulList li{
+  margin: auto;
+}
+#navbarSupportedContent form,input{
+  margin: auto;
+}
+#navbarSupportedContent input{
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+} 
+@media screen and (min-width: 990px) {
+  #navbarSupportedContent{
+  margin-left: -360px;
+}
+#navbarSupportedContent input{
+  margin-right: 55px;
+}
+} 
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+}
+.mainContent{
+    margin-left: 45px;
+    min-height: 82vh;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+.mainHeading{
+    margin-left: 45px;
+    margin-bottom: 20px;
+    min-height: 10vh;
+    border-radius: 20px;
+    background-color: #fff;
+    display: block;
+    padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+.mainSection{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#menuButton{
+    transform:rotate(180deg);
+}
+#closebtn{
+    transform: translateX(50px);
+}
+.nav-item{
+overflow: hidden;
+padding: 10px;
+}
+
+div.a {
+  text-align: justify;
+}
+
+
+
+/*Style for (DELETE QUESTION)
+--------------------------------------------------------------------------------*/ 
+
+/*Dropdown border radius changed (DELETE QUESTION)*/
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.50rem;
+}
+
+/*Dropdown border text color changed */
+.dropdown-toggle{
+  color: black;
+  
+}
+.custom-control.custom-checkbox{padding-left: 0;}
+
+label.custom-control-label {
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+label.custom-control-label::before, label.custom-control-label::after{
+  right: 0;
+  left: auto;
+}
+/*Button Radius changed */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  border-radius: 0.50rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Button group color changed and margin added*/
+.btn-secondary {
+  color: grey;
+  background-color:#fff;
+  border-color: rgb(168, 168, 168);
+  margin-top: 0px;
+  margin-bottom: 2px;;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color:#FF4D4D;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+  
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #fff;
+  background-color:#FF4D4D ;
+  border-color: #FF4D4D;
+}
+
+/*Button danger color changed*/
+.btn-danger {
+  color: #fff;
+  background-color:#FF4D4D;
+  border-color: #FF4D4D;
+  width: 100px;;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+}
+
+.btn-danger:focus, .btn-danger.focus {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+.btncheck {
+  display: inline-block;
+  font-weight: 400;
+  color: #06121d;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: gray;
+  padding: 0.275rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  border-radius: 0.50rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+
+/*Style for button grp (MAIN PAGE)
+------------------------------------------------------------------------------------------*/
+.span-grp {
+    border: 1px solid grey;
+}
+.btn-light
+{
+  color: gray;
+}
+
+.btn:hover {
+    background-color: #FF4D4D;
+    color: #fff;
+}
+
+.btn-group :nth-child(1) {
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    border-radius: 10px;
+}
+
+.btn-group :nth-child(3) {
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    border-radius: 10px;
+}
+
+.btn-group :nth-child(5) {
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    border-radius: 10px;
+}
+
+.btn-light {
+    background-color: #fff;
+}
+
+
+/*Style for (CHANGE PASSWORD PAGE)
+---------------------------------------------------------------------------------------*/
+
+/*Lock icon for password*/
+#lock
+{
+    background-image: url("./SVGs/password.svg");
+    background-repeat: no-repeat;
+    padding-left: 54px;
+    background-size: 25px;
+    background-position: 5%;
+	  max-width: 300px;
+}
+
+/*Logout icon to logout*/
+#logoutimg
+{
+    background-image: url("./SVGs/logout.svg");
+    background-repeat: no-repeat;
+    padding-left: 54px;
+    background-size: 25px;
+    background-position: 10%;
+	  max-width: 300px;
+}
+
+/*User icon for username*/
+#userimg
+{
+    background-image: url("./SVGs/user.svg");
+    background-repeat: no-repeat;
+    padding-left: 54px;
+    background-size: 25px;
+    background-position: 5%;
+    max-width: 300px;   
+}
+.btn1{
+	max-width: 300px;
+	margin-left: 25px;
+	border-radius: 12px;
+  background-color: white;
+  position: fixed;
+  left: 25px;
+  color: black;
+}
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group
+{
+    margin-bottom: 35px;
+    margin-top: 10px;
+  	margin-left: 25px;
+   	
+}
+
+.btn3 {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  border-radius: 0.35rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn3-danger {
+  color: #fff;
+  background-color:#FF4D4D;
+  border-color: #FF4D4D;
+  width: 300px;;
+}
+
+
+/*Style for (ADMIN PAGE)
+---------------------------------------------------------------------------------------*/
+
+/*White content box*/
+.mainContentadmin{
+    margin-left: 45px;
+    min-height: 60vh;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 27%;
+    margin-bottom: 25px;  
+     left: 35%;
+    top: 30%;
+     margin-top: -5%;
+    position: absolute;
+    
+}
+
+/*ADMIN LOGIN TEXT*/
+ h4{
+  margin-top: 80px;
+  margin-bottom: 0.5rem;
+}
+
+/*Input*/
+.form-groupadmin
+{
+    margin-bottom: 25px;
+    margin-top: 35px;
+  	margin-left: 25px;
+   	
+}
+
+
+/*Style for (ADD and EDIT QUESTION SELECTED QUESTION)
+------------------------------------------------------------------------------------*/
+
+/*add category*/
+.addca {
+  display: block;
+  width: 25%;
+  height: calc(1.1em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  margin-left: 4.5%;
+  margin-top: 0.25%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.50rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/*add question*/
+.add-qus{
+  display: block;
+  width:90%;
+  height: calc(1.1em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.50rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+/*question icon*/
+#qtn
+{
+    background-image: url("./SVGs/question.svg");
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    position: relative;
+    background-size: 25px;
+    background-position: 10px;
+	  max-width: 820px;
+}
+
+
+/*add icon*/
+#addctg
+{
+    background-image: url("./SVGs/add.svg");
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    background-size: 25px;
+    background-position: 10px;
+  	max-width: 300px;
+}
+
+/*logout for Edit Question Selected question And Add Question*/
+#log
+{    background-image: url("./SVGs/logout.svg");
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    background-size: 25px;
+    background-position: left;
+    max-width: 300px;
+    margin-top: 90%;
+}
+.btnlog{
+	max-width: 300px;
+	margin-left: 25px;
+	border-radius: 12px;
+  background-color: white;
+  position: absolute;
+  left: 25px;
+}
+
+/* label class which contain the value OR */
+.move {
+margin-left: 25%;
+width:0.28%;
+}
+
+/* First Button Add*/
+.add-btn {
+  box-align:right;
+  color: #fff;
+  padding-left: 20px;
+  background-color:#FF4D4D;
+  border-color: #FF4D4D;
+  border-radius: 0.50rem;
+  margin-left: 4.15%;
+  margin-top: 0.15%;
+  display: inline-block;
+    width: 90px;
+    height: 30px;
+}
+.add-btn:hover {
+  color: #fff;
+  background-color: hsl(0, 100%, 65%);
+  border-color: #FF4D4D;
+}
+.add-btn:focus, .add-btn.focus {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+.add-btn.disabled, .add-btn:disabled {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.add-btn:not(:disabled):not(.disabled):active, .add-btn:not(:disabled):not(.disabled).active,
+.show > .add-btn.dropdown-toggle {
+  color: #fff;
+  background-color: #bd2130;
+  border-color: #b21f2d;
+}
+
+/*ADD Button*/
+.add-btn-new {
+  color: #fff;
+  background-color:#FF4D4D;
+  border-color: #FF4D4D;
+  border-radius: 0.50rem;
+  width:10%;
+}
+
+.add-btn-new:hover {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+}
+
+.add-btn-new:focus, .add-btn-new.focus {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+.add-btn-new.disabled, .add-btn-new:disabled {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.add-btn-new:not(:disabled):not(.disabled):active, .add-btn-new:not(:disabled):not(.disabled).active,
+.show > .add-btn-new.dropdown-toggle {
+  color: #fff;
+  background-color: #bd2130;
+  border-color: #b21f2d;
+}
+
+.add-btn-new:not(:disabled):not(.disabled):active:focus, .add-btn-new:not(:disabled):not(.disabled).active:focus,
+.show > .add-btn-new.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+/*RESET Button*/
+.reset-btn {
+  color: #fff;
+  background-color:#FF4D4D;
+  border-color: #FF4D4D;
+  border-radius: 0.50rem;
+  width:10%
+}
+
+.reset-btn:hover {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+}
+
+.reset-btn:focus, .reset-btn.focus {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+.reset-btn.disabled, .reset-btn:disabled {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.reset-btn:not(:disabled):not(.disabled):active, .reset-btn:not(:disabled):not(.disabled).active,
+.show > .reset-btn.dropdown-toggle {
+  color: #fff;
+  background-color: #bd2130;
+  border-color: #b21f2d;
+}
+
+.reset-btn:not(:disabled):not(.disabled):active:focus, .reset-btn:not(:disabled):not(.disabled).active:focus,
+.show > .reset-btn.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
+}
+
+
+/*choose category*/
+.btn-s {
+  color: grey;
+  background-color:#fff;
+  border-color: rgb(168, 168, 168);
+  margin-top: 0px;
+  margin-bottom: 2px;
+  width: 20%;
+  height:10%;
+}
+
+.dropdown-toggle{
+  color: black;
+  
+}
+
+.btn-s:hover {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color:#FF4D4D;
+}
+
+.btn-s:focus, .btn-s.focus {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #FF4D4D;
+  
+}
+
+.btn-s.disabled, .btn-s:disabled {
+  color: #fff;
+  background-color:#FF4D4D ;
+  border-color: #FF4D4D;
+}
+
+.btn-s:not(:disabled):not(.disabled):active, .btn-s:not(:disabled):not(.disabled).active,
+.show > .btn-s.dropdown-toggle {
+  color: #fff;
+  background-color: #FF4D4D;
+  border-color: #4e555b;
+}
+
+/* Upload box */
+.card-cloud {
+  position: relative;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 60%;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 2px dashed rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+padding-left: 50px;
+}
+
+/* upload file */
+.upload-file {
+  background-color:#fff;
+  border-color: #fff
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
